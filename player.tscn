@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d14cg7ijcl26q"]
 
-[ext_resource type="Script" uid="uid://d1dtjampao2qd" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://d1dtjampao2qd" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://ds4net0w3op6t" path="res://camera_spring.gd" id="2_i3pqv"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_onrkg"]
 
@@ -8,14 +9,20 @@
 
 [node name="Node3D" type="Node3D" unique_id=317944143]
 
-[node name="Player" type="RigidBody3D" parent="." unique_id=1643126372]
-freeze_mode = 1
-linear_damp = 0.5
-angular_damp = 0.5
-script = ExtResource("1_4flbx")
+[node name="Player" type="RigidBody3D" parent="." unique_id=1750047431]
+script = ExtResource("1_onrkg")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=2103490314]
 shape = SubResource("SphereShape3D_onrkg")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=52881684]
 mesh = SubResource("SphereMesh_i3pqv")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1802938806]
+physics_interpolation_mode = 2
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.75285816, 0, 0, 0)
+spring_length = 6.0
+script = ExtResource("2_i3pqv")
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=1261163261]
+transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 0, 6, 12)

@@ -1,6 +1,6 @@
 extends RigidBody3D
 
-@export var force = 15
+@export var force = 10.0
 
 func _physics_process(delta):
 	var direction = Vector3.ZERO
@@ -15,4 +15,4 @@ func _physics_process(delta):
 		direction.z += 1
 
 	if direction != Vector3.ZERO:
-		apply_central_force(direction.normalized() * force)
+		apply_central_impulse(direction.normalized() * force * delta)
