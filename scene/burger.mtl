@@ -1,0 +1,12 @@
+# Blender 5.1.1 MTL File: 'lo-fi_assets_2_full_tray.blend'
+# www.blender.org
+
+newmtl big_mac
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Admin/Downloads/lo-fi_assets_2_full_tray/lo-fi_assets_2_full_tray/textures/big_uwu_tex.png

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://hi2cqd703y2s"]
 
 [ext_resource type="PackedScene" uid="uid://d14cg7ijcl26q" path="res://scene/player.tscn" id="1_pjass"]
+[ext_resource type="Script" uid="uid://droevugi6ntjk" path="res://scene/world.gd" id="1_txmk2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_txmk2"]
 
@@ -11,6 +12,7 @@ albedo_color = Color(0, 0.50338125, 0.14523008, 1)
 material = SubResource("StandardMaterial3D_pjass")
 
 [node name="world" type="Node3D" unique_id=1905006685]
+script = ExtResource("1_txmk2")
 
 [node name="gound" type="StaticBody3D" parent="." unique_id=1446139856]
 
@@ -59,3 +61,6 @@ transform = Transform3D(1, 0, 0, 0, 0.033015642, 0.99945486, 0, -0.99945486, 0.0
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1664400800]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 14, 0)
+
+[node name="ScoreLabel" type="Label3D" parent="." unique_id=1001214578]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -12.457945, 4.581107, -5.801995)

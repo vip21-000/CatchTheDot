@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blh6ft0uq234f"
-path.s3tc="res://.godot/imported/завантаження (2).jpg-f89f56183a094943898945d50beccfed.s3tc.ctex"
+uid="uid://cxdr0ugvdyqjp"
+path.s3tc="res://.godot/imported/player.png-44c165b266ceded3a049f1adea948d4c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://scene/завантаження (2).jpg"
-dest_files=["res://.godot/imported/завантаження (2).jpg-f89f56183a094943898945d50beccfed.s3tc.ctex"]
+source_file="res://scene/player.png"
+dest_files=["res://.godot/imported/player.png-44c165b266ceded3a049f1adea948d4c.s3tc.ctex"]
 
 [params]
 

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://gxo54bdp1tkl"]
+
+[ext_resource type="Script" uid="uid://c00nfioksp6nc" path="res://burger.gd" id="1_5n162"]
+[ext_resource type="ArrayMesh" uid="uid://c5j63sngi4pg6" path="res://scene/burger.obj" id="2_eu31t"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jvufg"]
+
+[node name="burger" type="Node3D" unique_id=1350324859]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1588348770]
+script = ExtResource("1_5n162")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=845361202]
+transform = Transform3D(2.1001196, 0, 0, 0, 1, 0, 0, 0, 2.2177527, -0.1786406, 0.70716476, -0.13384032)
+shape = SubResource("CapsuleShape3D_jvufg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D" unique_id=2037898249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6569526, 0, -1.020333)
+mesh = ExtResource("2_eu31t")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
