@@ -1,6 +1,6 @@
 extends RigidBody3D
 
-@export var force = 10.0
+@export var force = 20.0
 
 func _physics_process(delta):
 	var direction = Vector3.ZERO

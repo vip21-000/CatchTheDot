@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://hi2cqd703y2s"]
 
-[ext_resource type="PackedScene" uid="uid://d14cg7ijcl26q" path="res://player.tscn" id="1_pjass"]
+[ext_resource type="PackedScene" uid="uid://d14cg7ijcl26q" path="res://scene/player.tscn" id="1_pjass"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_txmk2"]
 
@@ -52,10 +52,10 @@ shape = SubResource("BoxShape3D_txmk2")
 mesh = SubResource("BoxMesh_w4qq1")
 
 [node name="Player" parent="." unique_id=317944143 instance=ExtResource("1_pjass")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3279028, 0)
-
-[node name="Camera3D" type="Camera3D" parent="Player" unique_id=1664400800]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 12.319214, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1.3279028, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2079529116]
 transform = Transform3D(1, 0, 0, 0, 0.033015642, 0.99945486, 0, -0.99945486, 0.033015642, 0, 18.85693, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1664400800]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 14, 0)
